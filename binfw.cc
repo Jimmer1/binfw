@@ -1,9 +1,8 @@
 #include <cstdint>
 #include <fstream>
-#include <iostream>
 #include <vector>
 
-int main([[maybe_unused]] int argc, char** argv) {
+int main(int argc, char** argv) {
     std::ifstream reader(argv[1]);
     std::vector<std::uint8_t> code;
     uint c;
