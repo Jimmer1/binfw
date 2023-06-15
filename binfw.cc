@@ -5,7 +5,7 @@
 int main(int argc, char** argv) {
     std::ifstream reader(argv[1]);
     std::vector<std::uint8_t> code;
-    uint c;
+    unsigned int c;
     while (reader >> std::hex >> c) {
         code.push_back(std::uint8_t(c));
     }
